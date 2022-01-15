@@ -6,19 +6,12 @@
     font-size: 16px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
+    color: var(--primary-color)
 }
 .container {
     max-width: 1150px;
     margin: 0 auto;
     margin: 1px solid red;
-}
-/* common css style end*/
-/*font-family: 'Inter', sans-serif;
-
-font-family: 'Poppins', sans-serif;*/
-/* header style start */
-#header {
-    margin-top: 80px;
 }
 .flexible-container {
     display: flex;
@@ -26,11 +19,24 @@ font-family: 'Poppins', sans-serif;*/
     justify-content: center;
     justify-content: space-between;
 }
+#logo-section {
+   margin-bottom: 90px;
+}
+:root {
+    --primary-color: #3A3A3A;
+    --orange-color: #FB8200;
+}
+
+/* common css style end*/
+/* header style start */
+#header {
+    margin-top: 80px;
+}
 #header .logo span{
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-weight: 700;
-    color: #3A3A3A
+    color: var(--primary-color)
 }
 #header .navigation {
     display: flex;
@@ -44,7 +50,7 @@ font-family: 'Poppins', sans-serif;*/
 }
 #header ul li a {
     text-decoration: none;
-    color: #3A3A3A;
+    color: var(--primary-color);
     text-transform: capitalize;
 }
 #header .navigation i {
@@ -53,4 +59,79 @@ font-family: 'Poppins', sans-serif;*/
 }
 #header .navigation i:last-child{
     margin-right: 0;
+}
+
+/* banner section style start */
+#banner .container{
+    padding: 60px 0;
+}
+#banner .left-side .title {
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+    line-height: 70px;
+}
+#banner button {
+    margin-top: 25px;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    outline: none;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#banner button i {
+    margin-left: 8px;
+}
+#banner .right-side img {
+    width: 475px;
+    background-image: url(file:///W:/Milestone%202/Projects/influencer-gear/images/Circle%20design.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+
+/* logo section style start */
+#logo-section .flexible-container {
+    padding: 35px 60px;
+    border-top: 1px solid #f5e9e9;
+    border-bottom: 1px solid #f5e9e9;
+}
+
+
+/* popular collection style start */
+#popular-collection .title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.single-item img {
+    width: 300px;
+    height: 255px;
+}
+.single-item .sub-title {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 16px 0 6px 0;
+    color: #18191F;
+}
+.single-item > span {
+    font-size: 24px;
+    font-weight: 400;
+    *font-family: 'Inter', sans-serif;
+}
+.single-item .rating {
+    display: flex;
+    align-items: center;
+}
+.single-item .stars {
+    margin-right: 22px;
+}
+.single-item .stars i {
+    font-size: 16px;
+    color: var(--orange-color);
 }
