@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap');
-/* common css style start*/
+/* common css style start*/  
 * {
     margin: 0;
     padding: 0;
@@ -19,12 +19,13 @@
     justify-content: center;
     justify-content: space-between;
 }
-#logo-section {
+#logo-section, #popular-collection {
    margin-bottom: 90px;
 }
 :root {
     --primary-color: #3A3A3A;
     --orange-color: #FB8200;
+    --gray-color: #787885;
 }
 
 /* common css style end*/
@@ -109,9 +110,15 @@
     text-align: center;
     margin-bottom: 30px;
 }
+#popular-collection .single-item {
+    width: 320px;
+    padding: 14px 17px;
+    box-shadow: 0px 0px 30px #AAAAAA;
+    border-radius: 5px;
+}
 .single-item img {
-    width: 300px;
-    height: 255px;
+    width: 100%;
+    border-radius: 5px;
 }
 .single-item .sub-title {
     font-size: 28px;
@@ -122,16 +129,27 @@
 .single-item > span {
     font-size: 24px;
     font-weight: 400;
-    *font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 .single-item .rating {
     display: flex;
     align-items: center;
 }
+.single-item .rating span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #5E6366;
+}
 .single-item .stars {
     margin-right: 22px;
 }
 .single-item .stars i {
-    font-size: 16px;
+    font-size: 12px;
     color: var(--orange-color);
+}
+.single-item p {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: var(--gray-color)
 }
