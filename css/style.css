@@ -32,6 +32,7 @@
 /* header style start */
 #header {
     margin-top: 80px;
+    width: 100%;
 }
 #header .logo span{
     font-family: 'Poppins', sans-serif;
@@ -104,13 +105,22 @@
 }
 
 /* logo section style start */
-#logo-section .flexible-container {
+#logo-section .logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,  minmax(147px, 1fr));
+    justify-content: center;
+    align-content: center;
     padding: 35px 60px;
     border-top: 1px solid #f5e9e9;
     border-bottom: 1px solid #f5e9e9;
 }
-
-
+#logo-section .logos div {
+    justify-self: center;
+}
+#logo-section .logos img {
+    display: flex;
+    align-items: center;
+}
 /* popular collection style start */
 #popular-collection .grid-box {
     display: grid;
@@ -245,4 +255,39 @@
 }
 #footer .social-media i:last-child{
     margin-right: 0;
+}
+
+
+/* tablet responsive */
+@media only screen and (max-width: 768px){
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .container ul {
+        display: none;
+    }
+    .flexible-container {
+        padding: 0 50px;
+    }
+    #banner .flexible-container {
+        flex-direction: column;
+    }
+    #banner .left-side {
+       margin-bottom: 20px
+    }
+    #logo-section .logos {
+        grid-row-gap: 15px;
+    }
+    #popular-collection .grid-box {
+    grid-template-columns: repeat(2, 350px);
+    justify-content: center;
+    grid-gap: 20px;
+    }
+    .blogs {
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 350px);
+        justify-content: center;
+    }
+    
 }
